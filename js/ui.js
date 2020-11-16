@@ -25,7 +25,15 @@ const renderContacts = (data, id) => {
     contacts.innerHTML += html
 }
 
-const removeContacts = (id) => {
+const removeContact = (id) => {
     const contact = document.querySelector(`.contact[data-id=${id}]`);
     contact.remove();
+}
+
+const updateContact = (data,id)=>{
+    const contact = document.querySelector(`.contact[data-id=${id}]`);
+    contact.querySelector('.name').innerHTML = data.name;
+    contact.querySelector('.phone').innerHTML = data.phone;
+    contact.querySelectorAll('.material-icons')[1].textContent = 
+    data.favorite ? 'star' : 'star_border';
 }
