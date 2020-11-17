@@ -1,7 +1,8 @@
 {
     "short_name": "MyContact",
-    "name": "My Conctact",
-    "icons": [{
+    "name": "My Contact",
+    "icons": [
+        {
             "src": "/img/icons/icon48.png",
             "type": "image/png",
             "sizes": "48x48"
@@ -37,12 +38,10 @@
             "type": "image/png",
             "sizes": "1024x1024"
         }
-
-
     ],
     "start_url": "/index.html",
     "background_color": "#ee6f72",
     "display": "standalone",
-    "theme_color": "#9e2123"
-
+    "theme_color": "#9e2123",
+    "orientation": "portrait-primary"
 }

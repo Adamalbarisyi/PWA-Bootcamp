@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="/css/materialize.min.css">
     <script src="/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,8 +11,7 @@
     <link rel="apple-touch-icon" href="/img/icons/icon96.png">
     <meta name="apple-mobile-web-app-status-bar" content="9e2123">
     <meta name="theme-color" content="#ee6f72">
-    <title>PWA CONTACT</title>
-
+    <title>My Contact</title>
 </head>
 
 <body>
@@ -22,10 +20,8 @@
             <a href="/" class="brand-logo">My Contact</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/pages/favorites.html">Favorites</a></li>
-                <li>
-                    <a href="/pages/favorites.html">About</a>
-                </li>
+
+                <li><a href="/pages/about.html">About</a></li>
             </ul>
         </div>
 
@@ -33,10 +29,8 @@
 
     <ul class="sidenav" id="mobile-demo">
         <li><a href="/">Home</a></li>
-        <li><a href="/pages/favorites.html">Favorites</a></li>
         <li><a href="/pages/about.html">About</a></li>
     </ul>
-
     <div class="container">
         <ul class="contacts collection with-header">
             <li class="collection-header">
@@ -60,7 +54,6 @@
         </div>
 
     </div>
-
     <!-- Modal Structure -->
     <div id="edit_contact_modal" class="modal edit-contact">
         <div class="modal-content">
@@ -74,7 +67,6 @@
         </div>
 
     </div>
-
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large red modal-trigger" href="#add_contact_modal">
             <i class="large material-icons">mode_edit</i>
@@ -82,32 +74,9 @@
 
     </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyAnvvWQ2AREEG-HXM2epEUs2rb-vEwtdds",
-            authDomain: "my-contact-ef444.firebaseapp.com",
-            databaseURL: "https://my-contact-ef444.firebaseio.com",
-            projectId: "my-contact-ef444",
-            storageBucket: "my-contact-ef444.appspot.com",
-            messagingSenderId: "950723005900",
-            appId: "1:950723005900:web:d82510b116714abf642169"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-    </script>
-
     <script src="/js/app.js"></script>
-    <script src="/js/db.js"></script>
     <script src="/js/ui.js"></script>
+    <script src="/js/users.js"></script>
 </body>
 
 </html>
